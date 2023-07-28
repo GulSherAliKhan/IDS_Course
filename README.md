@@ -313,4 +313,39 @@ Name: Value, dtype: float64
 
 
 # Week 5 (Exploratory Data Analysis)
+In this week i learn how to understand the data and also learn about univariate and bivariate 
 
+## Basic Understanding of Data
+To undestand your data you have to ask 7 questions
+1. How big is the data?
+2. How does the data look like?
+3.  What is the data type of cols?
+4.  Are there any missing values?
+5.   How does the data look mathematically?
+6.   Are there duplicate values?
+7.   How is the correlation between cols?
+ These are 7 Questions by the help which you can understand your data
+
+## Univariate
+In Exploratory Data Analysis (EDA), univariate analysis is a fundamental technique used to understand and analyze individual variables in isolation. It involves examining each variable or feature in the dataset separately to gain insights into its distribution, central tendency, spread, and other statistical properties. Univariate analysis is particularly useful for detecting outliers, understanding the range of values within a variable, and identifying patterns or trends within the data.
+
+During univariate analysis, data scientists commonly use various graphical and numerical methods such as histograms, box plots, summary statistics (mean, median, mode), measures of dispersion (standard deviation, range), and frequency distributions. These techniques provide a comprehensive view of the characteristics of a single variable, which can help in making data-driven decisions and formulating hypotheses.
+
+By performing univariate analysis in EDA, data scientists can identify potential issues with individual variables, identify the need for data preprocessing, and get a solid foundation for more advanced multivariate analysis and modeling. It is an essential step in the data exploration process, allowing practitioners to gain initial insights into the dataset's structure before delving into more complex analyses.
+
+Overall, univariate analysis is a crucial starting point in Exploratory Data Analysis, as it provides a clear and detailed understanding of the distribution and characteristics of each variable in the dataset, leading to more informed and effective data-driven decisions.
+
+##Bivariate
+In Exploratory Data Analysis (EDA), bivariate analysis is a key technique used to explore the relationship between two variables in the dataset. Unlike univariate analysis, which focuses on a single variable in isolation, bivariate analysis examines the interaction between two variables to understand how they are related or correlated.
+
+Bivariate analysis involves the use of various visual and statistical methods to investigate the dependencies and associations between two variables. Some common techniques used in bivariate analysis include scatter plots, line plots, bar charts, heatmaps, and correlation matrices. These methods help in identifying patterns, trends, and possible connections between the variables, providing valuable insights into the underlying data structure.
+
+By performing bivariate analysis, data scientists can answer important questions such as:
+
+1. Does one variable have a linear relationship with another?
+2. Are there any noticeable trends or patterns when two variables are plotted together?
+3. Do changes in one variable affect the other variable?
+4. Are there any outliers or unusual observations in the joint distribution of the two variables?
+Bivariate analysis plays a critical role in identifying potential correlations and dependencies, guiding the selection of appropriate variables for predictive modeling, and providing initial evidence for potential cause-and-effect relationships. It also acts as a stepping stone towards more sophisticated multivariate analyses, where interactions among multiple variables are explored.
+
+Overall, bivariate analysis is an essential component of Exploratory Data Analysis, as it sheds light on the relationships between pairs of variables, leading to a deeper understanding of the dataset and informing subsequent data modeling and decision-making processes.
