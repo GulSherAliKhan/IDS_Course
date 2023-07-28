@@ -349,3 +349,77 @@ By performing bivariate analysis, data scientists can answer important questions
 Bivariate analysis plays a critical role in identifying potential correlations and dependencies, guiding the selection of appropriate variables for predictive modeling, and providing initial evidence for potential cause-and-effect relationships. It also acts as a stepping stone towards more sophisticated multivariate analyses, where interactions among multiple variables are explored.
 
 Overall, bivariate analysis is an essential component of Exploratory Data Analysis, as it sheds light on the relationships between pairs of variables, leading to a deeper understanding of the dataset and informing subsequent data modeling and decision-making processes.
+# Week 6 (GGPLOT)
+GGPLOT is a powerful data visualization package in R that allows data scientists and analysts to create high-quality and customizable graphics with ease. Developed by Hadley Wickham, ggplot2 follows the grammar of graphics, enabling users to build visualizations by specifying data, aesthetic mappings, and geometric layers. The package provides a wide range of plot types, such as scatter plots, bar charts, line charts, and more, and allows for sophisticated customization of axes, colors, themes, and labels. ggplot2 encourages a layered approach to visualization, where each layer represents a different aspect of the plot, making it easy to build complex visualizations while maintaining a clear and structured code. With its intuitive syntax and versatility, ggplot2 has become a go-to tool for data visualization in R, empowering users to communicate insights effectively and explore patterns and trends in their datasets.
+# Week 7 (Data Visualization)
+Data visualization is a powerful technique in data analysis and communication, aiming to represent complex information visually in a clear and intuitive manner. Through charts, graphs, plots, and other visual representations, data visualization helps data scientists and decision-makers quickly understand patterns, trends, and relationships within datasets. It allows for the identification of outliers, the comparison of multiple variables, and the exploration of large datasets efficiently. By using the right visualization techniques, data scientists can effectively communicate insights, present findings, and make data-driven decisions, enhancing the overall understanding and impact of their analyses. Data visualization plays a crucial role in transforming raw data into actionable knowledge, making it an indispensable tool for effectively conveying information in various domains, including business, research, and exploratory data analysis.
+# Week 8 (Statistical Testing)
+Statistical testing is a critical component of data analysis used to make objective inferences and draw conclusions from sample data about a population. It involves applying various statistical techniques to test hypotheses and assess the significance of observed differences or relationships. Common statistical tests, such as t-tests, chi-square tests, ANOVA, and correlation analyses, are used to compare means, proportions, variances, and associations between variables. The process involves formulating null and alternative hypotheses, selecting an appropriate test based on data type and research question, calculating test statistics, and interpreting the results in terms of p-values and confidence intervals. By conducting statistical testing, data scientists can validate assumptions, identify patterns, and make data-driven decisions with confidence, thereby adding rigor and reliability to their analyses.
+
+# Week 9 (Machine Learning)
+Machine Learning is a subfield of artificial intelligence that focuses on developing algorithms and models that allow computers to learn from data and improve their performance on a specific task without being explicitly programmed. It enables machines to automatically learn and adapt through experience, making predictions or decisions based on patterns and relationships found in the data. There are three primary types of Machine Learning: supervised learning (where the algorithm learns from labeled data), unsupervised learning (where the algorithm learns from unlabeled data to find patterns), and reinforcement learning (where the algorithm learns by interacting with an environment and receiving feedback).
+
+The typical steps in a Machine Learning workflow include data preprocessing, feature engineering, model selection, model training, evaluation, and deployment. Machine Learning has a wide range of applications, including image recognition, natural language processing, recommendation systems, fraud detection, medical diagnosis, and autonomous vehicles. It has become an indispensable tool in various industries, driving advancements and innovations by leveraging the power of data to make intelligent and data-driven decisions. 
+
+# Week 10 (Regression Analysis)
+## Basic Linear Regression
+Linear Regression is one of the simplest and widely used regression techniques in statistics and machine learning. It is a method for modeling the relationship between a dependent variable (target) and one or more independent variables (predictors) by fitting a linear equation to the observed data. The equation takes the form:
+
+y = b0 + b1 * x1 + b2 * x2 + ... + bn * xn
+
+where:
+- y is the dependent variable (target)
+- b0 is the intercept (y-intercept) or the value of y when all predictors are 0
+- b1, b2, ..., bn are the coefficients (slopes) that represent the effect of each predictor on the target variable
+- x1, x2, ..., xn are the independent variables (predictors)
+
+The goal of linear regression is to find the best-fit line that minimizes the sum of squared differences between the observed target values and the predicted values from the linear equation.
+Key concepts in linear regression include:
+- Ordinary Least Squares (OLS) method for finding the coefficients that minimize the error.
+- Assumptions, such as linearity, independence of errors, constant variance (homoscedasticity), and normality of residuals.
+- Evaluation metrics like Mean Squared Error (MSE) and R-squared to assess model performance.
+
+Linear regression can be used for both simple (one predictor) and multiple (multiple predictors) linear regression tasks. It is often employed for predictive modeling, trend analysis, and identifying relationships between variables. While linear regression is a powerful and interpretable technique, it may not be suitable for complex relationships or non-linear data, which may require more sophisticated models.
+## Polynomial Linear Regression
+Polynomial Regression, also known as Polynomial Linear Regression, is an extension of simple linear regression that allows for modeling non-linear relationships between the dependent variable (target) and the independent variables (predictors). Instead of fitting a straight line, as in simple linear regression, polynomial regression fits a higher-degree polynomial curve to the data points.
+
+The equation for polynomial regression takes the form:
+
+y = b0 + b1 * x + b2 * x^2 + ... + bn * x^n
+
+where:
+- y is the dependent variable (target)
+- b0, b1, b2, ..., bn are the coefficients representing the effect of each degree of the predictor on the target variable
+- x is the independent variable (predictor)
+- n is the degree of the polynomial curve (1 for linear regression, 2 for quadratic, 3 for cubic, and so on)
+
+Polynomial regression allows the model to capture more complex patterns and non-linear relationships between variables, making it a more flexible regression technique. By increasing the degree of the polynomial, the model can fit more intricate curves to the data. However, caution must be exercised as high-degree polynomials can lead to overfitting, where the model fits noise and random variations in the data rather than the underlying pattern.
+
+The process of polynomial regression involves selecting an appropriate degree of the polynomial, fitting the curve to the data using regression techniques (e.g., Ordinary Least Squares), and evaluating the model's performance using metrics such as Mean Squared Error (MSE) or R-squared.
+
+Polynomial regression is commonly used when the data shows a curvilinear relationship between variables, and simple linear regression is not sufficient to capture the underlying pattern. It provides a more flexible approach to modeling complex data relationships, but careful consideration of the degree of the polynomial and potential overfitting is necessary to build an accurate and reliable model.
+## Regression Matrices
+Regression matrices, also known as coefficient matrices, are used in linear regression to summarize the relationship between the dependent variable (target) and the independent variables (predictors). They provide a concise representation of the coefficients (slopes) and the intercept (y-intercept) of the linear equation used to model the data.
+
+In simple linear regression with one predictor variable (x) and one dependent variable (y), the regression equation takes the form:
+
+y = b0 + b1 * x
+
+where:
+- y is the dependent variable (target)
+- b0 is the intercept (y-intercept) or the value of y when x is 0
+- b1 is the coefficient (slope) representing the effect of x on y
+
+In multiple linear regression with multiple predictor variables (x1, x2, ..., xn) and one dependent variable (y), the regression equation becomes:
+
+y = b0 + b1 * x1 + b2 * x2 + ... + bn * xn
+
+where:
+- y is the dependent variable (target)
+- b0 is the intercept (y-intercept) or the value of y when all predictors are 0
+- b1, b2, ..., bn are the coefficients (slopes) representing the effect of each predictor on the target variable
+- x1, x2, ..., xn are the independent variables (predictors)
+
+The regression matrices represent these coefficients in a structured format, making it easier to interpret and analyze the model. In simple linear regression, the coefficient matrix is [b0, b1], and in multiple linear regression, the coefficient matrix is [b0, b1, b2, ..., bn].
+
+These regression matrices are crucial in understanding the relationship between variables and making predictions based on the model. They provide valuable insights into the magnitude and direction of the impact of each predictor on the dependent variable, helping data scientists and analysts draw meaningful conclusions from their regression models.
