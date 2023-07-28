@@ -1,12 +1,6 @@
 # IDS_Course
 ## Week 1 (Introduction to Data Science)
-Briefly summarize the topics covered during the week, including:
-•	Importance of Data Science
-•	Data Science Process
-•	Data Science Tools and Technologies
-•	Data Science Skills
-•	Data Science Career Opportunities
-•	Conclusion
+
 ###Importance of Data Science
 In this section, you can discuss the significance of data science in today's world. Cover the following points:
 •	The role of data in decision-making
