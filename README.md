@@ -217,3 +217,100 @@ Once you have the data in the desired format, you can perform data analysis, vis
 • Social media APIs (e.g., Twitter API, Reddit API)
 • Weather data APIs (e.g., OpenWeatherMap API)
 • Public data APIs (e.g., World Bank API, COVID-19 data APIs)
+
+# Week 4 (Data Cleaning and Pre Processing)
+In this week I learn about Pivot Table, Scales, Merging and Groupby
+## Pivot Table
+A pivot table is a powerful data summarization and analysis tool commonly used in data analysis and business intelligence. It allows users to reorganize and aggregate data from a large dataset, providing a concise and structured view of the information. Pivot tables enable quick insights into patterns, trends, and relationships within the data, helping users make informed decisions.
+In a pivot table, users can select specific columns from the original dataset to act as rows, columns, values, or filters, defining how the data should be organized and displayed. The pivot table then automatically groups and calculates data based on the specified criteria, aggregating the values as needed. This dynamic arrangement enables users to explore data from different angles and easily drill down into details.
+With its flexibility and ease of use, pivot tables have become an essential tool for data analysts, business analysts, and decision-makers, enabling them to transform raw data into meaningful and actionable insights.
+### Example of Pivot Table
+import pandas as pd
+
+
+data = {
+    'Date': ['2023-07-01', '2023-07-01', '2023-07-02', '2023-07-02', '2023-07-03'],
+    'Product': ['A', 'B', 'A', 'B', 'A'],
+    'Sales': [100, 150, 120, 200, 80]
+}
+
+
+df = pd.DataFrame(data)
+
+
+pivot_table = df.pivot_table(index='Date', columns='Product', values='Sales', aggfunc='sum', fill_value=0)
+
+print(pivot_table)
+
+### Output
+Product         A    B
+Date                   
+2023-07-01    100  150
+2023-07-02    120  200
+2023-07-03     80    0
+
+## Scales:
+Scales, in the context of data visualization and data analysis, refer to the transformation of raw data into a visually meaningful representation. They play a crucial role in accurately communicating information through visualizations. Scales help to map data values to appropriate visual properties such as position, size, color, or shape. There are different types of scales used based on the nature of the data being visualized. Common scales include linear scales for continuous data, ordinal scales for ordered categorical data, and nominal scales for non-ordered categorical data. By selecting the appropriate scales, data scientists and visualization experts can create insightful and effective visualizations that facilitate better understanding and interpretation of complex datasets. Understanding scales is essential in the data visualization process to ensure that visual representations accurately and meaningfully convey the underlying information.
+
+## Merge
+Merge is a fundamental operation in data manipulation that combines data from multiple datasets based on specified common columns or keys. It is widely used in data analysis and data integration tasks to consolidate information from different sources. Merging enables data scientists to bring together related data, allowing them to perform comprehensive analyses and gain insights from diverse datasets.
+
+In Python, the Pandas library provides powerful merge functionality with the merge() function. The function offers different types of joins, such as inner join, outer join, left join, and right join, to control how data is combined. 
+### Example of Merging
+### Code
+import pandas as pd
+
+data1 = {
+    'ID': [1, 2, 3, 4],
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Age': [25, 30, 22, 28]
+}
+
+data2 = {
+    'ID': [3, 4, 5, 6],
+    'City': ['New York', 'Chicago', 'Los Angeles', 'San Francisco'],
+    'Salary': [50000, 60000, 55000, 70000]
+}
+
+
+df1 = pd.DataFrame(data1)
+df2 = pd.DataFrame(data2)
+
+
+merged_df = pd.merge(df1, df2, on='ID', how='inner')
+
+print(merged_df)
+
+### Output
+   ID     Name  Age           City  Salary
+0   3  Charlie   22    Los Angeles   50000
+1   4    David   28        Chicago   60000
+
+## Groupby
+GroupBy is a powerful data manipulation technique used in data analysis to split data into groups based on specific criteria, apply functions to each group, and combine the results into a structured format. It allows data scientists to perform operations on subsets of data, enabling deeper insights and analysis. The GroupBy process involves three steps: splitting the data into groups based on a chosen key or keys, applying a function or transformation to each group, and then combining the results into a new data structure. GroupBy is commonly used in conjunction with aggregate functions, such as sum, mean, count, or custom functions, to obtain summary statistics or perform complex data transformations. This functionality is often found in libraries like Pandas, which provide powerful GroupBy capabilities for handling data in Python. By utilizing GroupBy effectively, data scientists can efficiently analyze and interpret large datasets, gaining valuable insights from structured data subsets.
+### Example of Groupby
+### Code
+import pandas as pd
+
+
+data = {
+    'Category': ['A', 'B', 'A', 'B', 'A'],
+    'Value': [10, 20, 15, 25, 30]
+}
+
+
+df = pd.DataFrame(data)
+
+
+grouped_df = df.groupby('Category')['Value'].mean()
+
+print(grouped_df)
+### Output
+Category
+A    18.333333
+B    22.500000
+Name: Value, dtype: float64
+
+
+# Week 5 (Exploratory Data Analysis)
+
