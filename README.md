@@ -551,3 +551,10 @@ Overall, Google's focus on ethics and fairness in applied data science is aimed 
 
 
 # Assignment 1
+[https://github.com/GulSherAliKhan/Assignment_no_1]
+
+# Assignment 2
+[https://github.com/GulSherAliKhan/Movies-data-from-TMDB.]
+
+# Assignment 3
+[https://github.com/GulSherAliKhan/Road_Accident]
